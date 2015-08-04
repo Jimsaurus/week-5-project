@@ -699,3 +699,23 @@ input {
     width: 75%;
   }
 }
+
+@media all and (max-width: 450px) {
+  .hero-title h1 {
+    font-size: 14px;
+  }
+  p.round-counter {
+    font-size: 12px;
+    margin: 3px 0 0 0;
+  }
+  .next-round {
+    padding: 14px 12px;
+    margin: 11% auto auto auto;
+  }
+  .stats {
+    font-size: 10px;
+  }
+  .battle-log {
+    font-size: 9px;
+  }
+}

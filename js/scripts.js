@@ -335,6 +335,9 @@ app.displayWinner = function(winner){
 	    $('.battle-log').text('');
 	    //$('.winner-name').text('Winner Name!');
 	    //$('modal img').attr('src', 'assets/pokemon.png');
+
+	    location.reload();
+	    
 	});
 }; // display winner function 
 
