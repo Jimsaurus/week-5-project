@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pocket Monster Rumble</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/pokeball-8.png" type="image/x-icon">
+	<link rel="icon" href="assets/pokeball-8.png" type="image/x-icon">
+	<!-- apple icons -->
+	<link rel="apple-touch-icon" href="assets/pokeball-8.png" />
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<!-- animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- custom styles -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main>
+		<!-- HERO SECTION 
+		================================================================================-->
+		<section class="hero">
+			<div class="hero-title">
+				<h1>POCKET MONSTER RUMBLE</h1>
+			</div><!--hero-title-->
+
+			<div class="hero-pokemon">
+				<div class="hero-pokemon-item pokemon1">
+					<img class="animated" id="user1Sprite" src="assets/pokeball-flat.png" alt="">
+					<h2 id="user1Name">Player 1</h2>
+					
+				</div>
+				<div class="hero-vs">
+					<p>VS</p>
+					<p class="error"></p>
+					
+				</div>
+				<div class="hero-pokemon-item pokemon2">
+					<img class="animated" id="user2Sprite" src="assets/pokeball-flat.png" alt="">
+					<h2 id="user2Name">Player 2</h2>
+				</div>	
+			</div><!--hero-pokemon-->
+
+			<div class="hero-input">
+				<span class="player1 animated pulse infinite playerActive">Player 1</span>
+				<span class="player2 pulse infinite">Player 2</span>
+				<form class="hero-input-form" action="">
+					<input id="poke-search" type="text" placeholder="Pocket monster!">
+					<input id="poke-submit" type="submit" value="I Choose You!">
+				</form>
+				<button class="random-pokemon"><i class="fa fa-random"></i></button>
+				<button class="ready"><i class="fa fa-play-circle"></i></button>
+				
+			</div><!--hero-input-->
+		</section><!--hero-->
+
+
+		<!-- BATTLE SECTION 
+		================================================================================-->
+		<section class = "battle">
+			<div class="battle-wrapper">
+				<div class="battle-p1">
+					<div class="battle-left">
+						<div class="stat-wrapper">
+							<div class="stat-top">
+								<p class="p1-name">Pikachu</p>
+								<p class="p1-level">Level: 1</p>
+							</div>
+							<div class="stat-bottom">
+								<p>HP: <span>30/30</span></p>
+							</div>
+						</div><!--stat-wrapper-->
+					</div><!--p1-left-->
+					<div class="battle-right">
+						<div class="sprite-wrapper">
+							<img class="poke-sprite"src="assets/pokemon.png" alt="">
+							<img src="assets/battle-floor.png" alt="">
+						</div><!-- p1 sprite-wrapper-->
+					</div><!--p1-right-->
+				</div><!-- battle-p1-->
+
+				<div class="battle-p2">
+
+					<div class="battle-left">
+						<div class="sprite-wrapper">
+							<img class="poke-sprite"src="assets/pokemon2.png" alt="">
+							<img src="assets/battle-floor.png" alt="">
+							
+						</div><!-- p2 sprite-wrapper-->
+						
+					</div><!--p2-left-->
+
+					<div class="battle-right">
+						<div class="stat-wrapper">
+							<div class="stat-top">
+								<p class="p2-name">Jigglypuff</p>
+								<p>Level: 1</p>
+							</div>
+							<div class="stat-bottom">
+								<p>HP: <span>45/45</span></p>
+							</div>
+						</div><!--stat-wrapper-->
+					</div><!--p1-right-->
+					
+				</div><!--battle-p2-->
+
+				<div class="battle-footer">
+					<div class="battle-footer-wrapper">
+						<p class="round-counter">ROUND #1</p>
+						<div class="battle-bottom">
+							<div class="battle-log"></div>
+							<div class="next-round">FIGHT!</div>
+						</div>
+					</div>
+				</div><!--battle-footer-->
+				
+				<!-- MODAL -->
+				<!-- ============================================ -->
+				<div class="modal-container">
+					<div class="overlay"></div>
+					<div class="modal">
+						<h3>WINNER!</h3>
+						<img src="assets/pokemon.png" alt="">
+						<p class="winner-name">WINNER</p>
+						<div class="modal-actions">
+							<div class="modal-new">
+								<p>RESTART</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--battle wrapper -->
+		</section>
+	</main><!--main body wrapper-->
+
+	
+	<!-- Scritps
+	=========================================================================
+	======================================================================-->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
